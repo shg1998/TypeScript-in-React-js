@@ -9,12 +9,14 @@ import Profile from "./Components/RenderProps/Profile";
 import NewsFeed from "./Components/RenderProps/NewsFeed";
 import {MyContext, MyContextProvider} from "./Context/MyContext";
 import HomePage from "./Components/ContextComponent/HomePage";
+import { Layout } from './Layout';
 
 function App() {
     return (
         <div className="App">
-            <h1>my first fully ts App</h1>
 
+            <h1>my first fully ts App</h1>
+            <Layout/>
             {/*props tutorial :🌹🌹*/}
             {/*<Button type={"primary"}>with primary  props</Button>*/}
             {/*<br/>*/}
@@ -31,9 +33,11 @@ function App() {
             {/*<TrackClick renderProps={(clickCount) => <NewsFeed clickCount={clickCount}/>}/>*/}
 
             {/* Context Tutorial :  */}
-            <MyContextProvider>
-                <HomePage/>
-            </MyContextProvider>
+            {/*<MyContextProvider>*/}
+            {/*    <HomePage/>*/}
+            {/*</MyContextProvider>*/}
+
+        {/*    routing Concept*/}
 
         </div>
     );
